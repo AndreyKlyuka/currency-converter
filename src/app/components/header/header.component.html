@@ -1,0 +1,8 @@
+<header>
+  <h1>Актуальний курс популярних валют на {{currentDate | date: 'dd.MM.yyyy'}}</h1>
+  <section class="header__exchange-rate">
+    <app-currency-item *ngFor="let currency of currenciesToShow" [currencyCC]="currency"
+                       [currentDate]="currentDate.toLocaleDateString().split('.').reverse().join('')">
+    </app-currency-item>
+  </section>
+</header>

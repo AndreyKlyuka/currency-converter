@@ -1,0 +1,6 @@
+<ng-container *ngIf="(currencyData$ | async)?.length" >
+  <div class="currency-item" *ngIf="currencyData$ | async as currencyData">
+        1 {{currencyData[0].cc}} - {{currencyData[0].rate}} UAH
+<!--      {{currencyData | json}}-->
+  </div>
+</ng-container>
