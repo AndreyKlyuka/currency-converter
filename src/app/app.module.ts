@@ -16,29 +16,33 @@ import {CardModule} from "primeng/card";
 import {ProgressSpinnerModule} from "primeng/progressspinner";
 import {ListboxModule} from "primeng/listbox";
 import { CurrencyItemComponent } from './components/currency-item/currency-item.component';
+import { ConverterItemComponent } from './components/converter-item/converter-item.component';
+import {DropdownModule} from "primeng/dropdown";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ConverterCardComponent,
-    CurrencyItemComponent
+    CurrencyItemComponent,
+    ConverterItemComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    SliderModule,
-    FormsModule,
-    InputNumberModule,
-    MenubarModule,
-    InputTextModule,
-    ButtonModule,
-    CardModule,
-    ProgressSpinnerModule,
-    ListboxModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        SliderModule,
+        FormsModule,
+        InputNumberModule,
+        MenubarModule,
+        InputTextModule,
+        ButtonModule,
+        CardModule,
+        ProgressSpinnerModule,
+        ListboxModule,
+        DropdownModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

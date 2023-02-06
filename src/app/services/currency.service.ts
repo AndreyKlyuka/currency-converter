@@ -16,7 +16,6 @@ export class CurrencyService {
     return this.http.get<ICurrency[]>(`${this.url}?valcode=${code}&date=${date}&json`)
 
   }
-
   geAllCurrencies() {
     return this.http.get<ICurrency[]>(`${this.url}?json`)
   }

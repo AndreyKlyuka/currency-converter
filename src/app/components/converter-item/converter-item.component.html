@@ -1,0 +1,22 @@
+<div class="converter-item">
+  <div>
+    <p-dropdown [options]="currencies" [(ngModel)]="selectedCurrency" optionLabel="cc"
+                [filter]="true" filterBy="cc" placeholder="Select a currency">
+      <ng-template pTemplate="selectedCurrency">
+        <div class="currency-item currency-item-value" *ngIf="selectedCurrency">
+          <div>{{selectedCurrency.txt}}</div>
+        </div>
+      </ng-template>
+      <ng-template let-currency pTemplate="currency">
+        <div class="currency-item">
+          <div>{{currency.cc}}</div>
+        </div>
+      </ng-template>
+    </p-dropdown>
+  </div>
+  <div>
+    <p-inputNumber [(ngModel)]="value" locale="en-US" ></p-inputNumber>
+  </div>
+</div>
+
+
